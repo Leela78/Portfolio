@@ -14,7 +14,7 @@
 .timeline-item {
     position: relative;
     margin-bottom: 50px;
-    animation: fadeUp 0.6s ease forwards;
+    animation: fadeUp .6s ease forwards;
 }
 
 .timeline-icon {
@@ -42,14 +42,13 @@
     background: #1E293B;
     padding: 28px;
     border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.08);
-
-    transition: 0.3s ease;
+    border: 1px solid rgba(255,255,255,.08);
+    transition: .3s;
 }
 
 .timeline-content:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.30);
+    box-shadow: 0 12px 30px rgba(0,0,0,.30);
 }
 
 .timeline-date {
@@ -69,8 +68,8 @@
 
 .timeline-content h3 {
     font-size: 26px;
-    color: white;
     margin-bottom: 8px;
+    color: white;
 }
 
 .timeline-content h4 {
@@ -83,49 +82,98 @@
     color: #CBD5E1;
     font-size: 16px;
     line-height: 1.8;
+    margin-bottom: 25px;
 }
 
-@keyframes fadeUp {
+/* Certificate Button */
 
-    from {
-        opacity: 0;
-        transform: translateY(30px);
+.certificate-btn {
+
+    display: inline-flex !important;
+
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: #2563EB;
+
+    color: #fff !important;
+
+    padding: 12px 24px;
+
+    border-radius: 8px;
+
+    text-decoration: none !important;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.certificate-btn:hover {
+
+    background: #1D4ED8;
+
+    transform: translateY(-3px);
+
+    color: #fff;
+
+}
+
+.certificate-btn svg{
+
+    font-size:16px;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    to{
+        opacity:1;
+        transform:translateY(0);
     }
 
 }
 
-@media (max-width: 768px) {
+@media(max-width:768px){
 
-    .experience {
-        padding: 80px 6%;
+    .experience{
+        padding:80px 6%;
     }
 
-    .timeline {
-        padding-left: 25px;
+    .timeline{
+        padding-left:25px;
     }
 
-    .timeline-icon {
-        left: -42px;
-        width: 34px;
-        height: 34px;
-        font-size: 15px;
+    .timeline-icon{
+        left:-42px;
+        width:34px;
+        height:34px;
+        font-size:15px;
     }
 
-    .timeline-content {
-        padding: 22px;
+    .timeline-content{
+        padding:22px;
     }
 
-    .timeline-content h3 {
-        font-size: 22px;
+    .timeline-content h3{
+        font-size:22px;
     }
 
-    .timeline-content h4 {
-        font-size: 16px;
+    .timeline-content h4{
+        font-size:16px;
+    }
+
+    .certificate-btn{
+        width:100%;
     }
 
 }

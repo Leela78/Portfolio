@@ -74,33 +74,37 @@ export const projects = [
   }
 ];
 
-// =========================
+
 // Experience
-// =========================
 
 export const experience = [
+
   {
     id: 1,
-    year: "2025",
+    year: "May 2025 - June 2025",
     role: "Web Development Intern",
     company: "AICTE & EduSkills",
     description:
-      "Completed a Web Development Internship and built responsive web applications while strengthening frontend development skills."
+      "Completed a Web Development internship where I built responsive web applications using HTML, CSS, JavaScript, and modern development practices.",
+    certificate: "/certificates/Internship-1.pdf"
   },
 
   {
     id: 2,
-    year: "2026",
+    year: "May 2026 - July 2026",
     role: "Android Application Development Intern",
     company: "APSSDC",
     description:
-      "Worked on Android Application Development and gained practical experience in mobile applications and software development."
+      "Completed an Android Application Development internship and gained hands-on experience in Android Studio, Java, UI design, and application development fundamentals.",
+    certificate: "/certificates/Internship-2.pdf"
   }
+
 ];
 
-// =========================
+
+
 // Certificates
-// =========================
+
 
 export const certificates = [
   {

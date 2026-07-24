@@ -1,6 +1,6 @@
 import "./Experience.css";
 import { experience } from "../../data/data";
-import { FaBriefcase } from "react-icons/fa";
+import { FaBriefcase, FaEye } from "react-icons/fa";
 
 function Experience() {
   return (
@@ -34,6 +34,16 @@ function Experience() {
               <h4>{item.company}</h4>
 
               <p>{item.description}</p>
+
+              <a
+                href={item.certificate}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="certificate-btn"
+              >
+                <FaEye />
+                <span>View Certificate</span>
+              </a>
 
             </div>
 
