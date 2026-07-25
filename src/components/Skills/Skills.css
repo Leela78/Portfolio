@@ -1,87 +1,136 @@
-.skills {
-    padding: 100px 8%;
-    background: #0F172A;
+.skills{
+    padding:100px 8%;
+    background:#0F172A;
 }
 
-.skills .section-title {
-    text-align: center;
-    color: white;
-    font-size: 42px;
-    margin-bottom: 15px;
+.skills-grid{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
 }
 
-.skills .section-subtitle {
-    text-align: center;
-    color: #CBD5E1;
-    font-size: 17px;
-    max-width: 700px;
-    margin: 0 auto 60px;
-    line-height: 1.8;
+.skill-card{
+
+    background:#1E293B;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:30px;
+
+    transition:.35s ease;
+
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#38BDF8;
+
+    box-shadow:0 15px 35px rgba(37,99,235,.20);
+
 }
 
-.skill-card {
-    background: #1E293B;
-    padding: 30px;
-    border-radius: 18px;
-    border: 1px solid rgba(255,255,255,.08);
-    transition: .35s ease;
+.icon{
+
+    width:65px;
+    height:65px;
+
+    background:#2563EB;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:28px;
+
+    margin-bottom:22px;
+
 }
 
-.skill-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0,0,0,.30);
+.skill-card h3{
+
+    color:#38BDF8;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
 }
 
-.skill-card h3 {
-    color: #38BDF8;
-    font-size: 24px;
-    margin-bottom: 25px;
+.skill-card ul{
+
+    list-style:none;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    padding:0;
+
+    margin:0;
+
 }
 
-.skill-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+.skill-card li{
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:.3s;
+
 }
 
-.skill-items span {
-    background: #2563EB;
-    color: white;
-    padding: 10px 18px;
-    border-radius: 25px;
-    font-size: 15px;
-    font-weight: 500;
-    transition: .3s;
-}
+.skill-card li:hover{
 
-.skill-items span:hover {
-    background: #38BDF8;
-    color: #0F172A;
+    background:#38BDF8;
+
+    color:#0F172A;
+
 }
 
 /* ==========================
    Tablet
 ========================== */
 
-@media (max-width:1024px){
+@media(max-width:1024px){
 
     .skills{
+
         padding:90px 6%;
+
     }
 
     .skills-grid{
-        grid-template-columns:repeat(2,1fr);
+
         gap:25px;
+
     }
 
     .skill-card{
+
         padding:25px;
+
     }
 
 }
@@ -90,42 +139,54 @@
    Mobile
 ========================== */
 
-@media (max-width:768px){
+@media(max-width:768px){
 
     .skills{
+
         padding:80px 6%;
-    }
 
-    .skills .section-title{
-        font-size:34px;
-    }
-
-    .skills .section-subtitle{
-        font-size:16px;
-        margin-bottom:40px;
     }
 
     .skills-grid{
+
         grid-template-columns:1fr;
+
         gap:22px;
+
     }
 
     .skill-card{
+
+        text-align:center;
+
         padding:24px;
+
+    }
+
+    .icon{
+
+        margin:0 auto 20px;
+
     }
 
     .skill-card h3{
+
         font-size:22px;
-        text-align:center;
+
     }
 
-    .skill-items{
+    .skill-card ul{
+
         justify-content:center;
+
     }
 
-    .skill-items span{
+    .skill-card li{
+
         font-size:14px;
+
         padding:9px 16px;
+
     }
 
 }
@@ -134,27 +195,44 @@
    Small Phones
 ========================== */
 
-@media (max-width:480px){
+@media(max-width:480px){
 
     .skills{
-        padding:70px 5%;
-    }
 
-    .skills .section-title{
-        font-size:30px;
+        padding:70px 5%;
+
     }
 
     .skill-card{
+
         padding:20px;
+
+    }
+
+    .icon{
+
+        width:58px;
+
+        height:58px;
+
+        font-size:24px;
+
     }
 
     .skill-card h3{
+
         font-size:20px;
+
     }
 
-    .skill-items span{
+    .skill-card li{
+
         width:100%;
+
         text-align:center;
+
+        padding:10px;
+
     }
 
 }
