@@ -226,11 +226,11 @@ export const codingProfiles = [
     link: "https://leetcode.com/u/Leela_79/"
   },
 
-  {
-    id: 4,
-    platform: "CodeChef",
-    username: "Leela",
-    description: "Competitive programming profile.",
-    link: "https://www.codechef.com/users/YOUR_USERNAME"
-  }
+ {
+  id: 4,
+  platform: "CodeChef",
+  username: "nadipallileela",
+  description: "Competitive programming profile with 500+ solved problems.",
+  link: "https://www.codechef.com/users/nadipallileela"
+}
 ];
